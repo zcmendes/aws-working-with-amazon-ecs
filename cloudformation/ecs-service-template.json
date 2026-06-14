@@ -1,0 +1,97 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "The template used to create an ECS Service from the ECS Console.",
+  "Parameters": {
+    "ECSClusterName": {
+      "Type": "String",
+      "Default": "ECSCluster"
+    },
+    "ECSServiceName": {
+      "Type": "String",
+      "Default": "myFirstService"
+    },
+    "SecurityGroupIDs": {
+      "Type": "CommaDelimitedList",
+      "Default": "sg-02ca0d9d7c4c18033"
+    },
+    "SubnetIDs": {
+      "Type": "CommaDelimitedList",
+      "Default": ""
+    },
+    "VpcID": {
+      "Type": "String",
+      "Default": "vpc-062bc08b12da584b0"
+    },
+    "LoadBalancerName": {
+      "Type": "String",
+      "Default": "MyLoadBalancer"
+    }
+  },
+  "Resources": {
+    "ECSService": {
+      "Type": "AWS::ECS::Service",
+      "Properties": {
+        "Cluster": "ECSCluster",
+        "TaskDefinition": "arn:aws:ecs:us-west-2:473454933686:task-definition/yourApp-demo:1",
+        "LaunchType": "EC2",
+        "ServiceName": "myFirstService",
+        "SchedulingStrategy": "REPLICA",
+        "DesiredCount": 1,
+        "AvailabilityZoneRebalancing": "ENABLED",
+        "LoadBalancers": [
+          {
+            "ContainerName": "simple-app",
+            "ContainerPort": 80,
+            "LoadBalancerName": {
+              "Ref": "AWS::NoValue"
+            },
+            "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:473454933686:targetgroup/myTargetGroup/263cba5acada4fac"
+          }
+        ],
+        "DeploymentConfiguration": {
+          "DeploymentCircuitBreaker": {
+            "Enable": true,
+            "Rollback": true
+          },
+          "Strategy": "ROLLING",
+          "MaximumPercent": 200,
+          "MinimumHealthyPercent": 100
+        },
+        "DeploymentController": {
+          "Type": "ECS"
+        },
+        "ServiceConnectConfiguration": {
+          "Enabled": false
+        },
+        "PlacementStrategies": [
+          {
+            "Field": "attribute:ecs.availability-zone",
+            "Type": "spread"
+          },
+          {
+            "Field": "instanceId",
+            "Type": "spread"
+          }
+        ],
+        "PlacementConstraints": [],
+        "Tags": [],
+        "EnableECSManagedTags": true,
+        "EnableExecuteCommand": false
+      }
+    }
+  },
+  "Outputs": {
+    "ClusterName": {
+      "Description": "The cluster used to create the service.",
+      "Value": {
+        "Ref": "ECSClusterName"
+      }
+    },
+    "ECSService": {
+      "Description": "The created service.",
+      "Value": {
+        "Ref": "ECSService"
+      }
+    }
+  }
+}
