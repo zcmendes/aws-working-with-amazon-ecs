@@ -100,6 +100,9 @@ The ECS scheduler automatically maintained the desired task count and distribute
 
 ![Service Creation](screenshots/02-service-created.png)
 
+### Task Definition Revision 2
+
+![Task Definition V2](screenshots/06-task-definition-v2.png)
 
 
 ### Running Tasks
