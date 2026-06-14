@@ -81,7 +81,7 @@ Both containers share a Docker volume, demonstrating the Sidecar Container Patte
 
 ### ECS Service Creation
 
-![Service Creation](screenshots/02-service-created.png)
+![Service Creation](screenshots/02-service-created.jpg)
 
 ### Running Tasks
 
