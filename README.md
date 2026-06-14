@@ -83,6 +83,22 @@ Both containers share a Docker volume, demonstrating the Sidecar Container Patte
 
 ![Service Creation](screenshots/02-service-created.jpg)
 
+## ECS Service Deployment
+
+An ECS Service named `myFirstService` was created using the EC2 launch type.
+
+Configuration highlights:
+
+- Cluster: ECSCluster
+- Launch Type: EC2
+- Scheduling Strategy: Replica
+- Desired Tasks: 1
+- Running Tasks: 1
+- Load Balancer: Network Load Balancer
+- Deployment Status: Completed
+
+The ECS scheduler automatically maintained the desired task count and distributed workloads across the available container instances.
+
 ### Running Tasks
 
 ![Running Tasks](screenshots/03-running-task.png)
