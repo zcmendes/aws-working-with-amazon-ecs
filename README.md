@@ -106,9 +106,6 @@ The ECS scheduler automatically maintained the desired task count and distribute
 
 ![Running Tasks](screenshots/03-running-task.png)
 
-### Load Balancer
-
-![Load Balancer](screenshots/04-load-balancer.png)
 
 ### Application Version 1
 
