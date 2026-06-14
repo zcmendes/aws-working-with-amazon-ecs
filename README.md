@@ -94,11 +94,11 @@ The ECS scheduler automatically maintained the desired task count and distribute
 
 ### Task Definition Revision 1
 
-![Task Definition](screenshots/01-task-definition-v1.jpg)
+![Task Definition](screenshots/01-task-definition-v1.png)
 
 ### ECS Service Creation
 
-![Service Creation](screenshots/02-service-created.jpg)
+![Service Creation](screenshots/02-service-created.png)
 
 
 
