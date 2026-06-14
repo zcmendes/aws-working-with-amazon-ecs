@@ -114,9 +114,6 @@ The ECS scheduler automatically maintained the desired task count and distribute
 
 ![Application V1](screenshots/05-application-v1.png)
 
-### Task Definition Revision 2
-
-![Task Definition V2](screenshots/06-task-definition-v2.png)
 
 ### Rolling Deployment
 
