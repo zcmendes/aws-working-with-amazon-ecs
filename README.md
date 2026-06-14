@@ -73,15 +73,6 @@ Both containers share a Docker volume, demonstrating the Sidecar Container Patte
 5. Perform rolling deployment update
 6. Scale service from 1 to 2 tasks
 
-## Screenshots
-
-### Task Definition Revision 1
-
-![Task Definition](screenshots/01-task-definition-v1.jpg)
-
-### ECS Service Creation
-
-![Service Creation](screenshots/02-service-created.jpg)
 
 ## ECS Service Deployment
 
@@ -98,6 +89,18 @@ Configuration highlights:
 - Deployment Status: Completed
 
 The ECS scheduler automatically maintained the desired task count and distributed workloads across the available container instances.
+
+## Screenshots
+
+### Task Definition Revision 1
+
+![Task Definition](screenshots/01-task-definition-v1.jpg)
+
+### ECS Service Creation
+
+![Service Creation](screenshots/02-service-created.jpg)
+
+
 
 ### Running Tasks
 
