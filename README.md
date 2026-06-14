@@ -77,7 +77,7 @@ Both containers share a Docker volume, demonstrating the Sidecar Container Patte
 
 ### Task Definition Revision 1
 
-![Task Definition](screenshots/01-task-definition-v1.png)
+![Task Definition](screenshots/01-task-definition-v1.jpg)
 
 ### ECS Service Creation
 
