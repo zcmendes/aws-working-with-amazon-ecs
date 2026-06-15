@@ -114,6 +114,28 @@ The ECS scheduler automatically maintained the desired task count and distribute
 
 ![Deployment Update](screenshots/07-deployment-update.png)
 
+The ECS Service was updated to use Task Definition Revision 2 (`yourApp-demo:2`).
+
+Deployment details:
+
+- Deployment Controller: ECS
+- Deployment Strategy: Rolling Update
+- Minimum Healthy Tasks: 100%
+- Maximum Running Tasks: 200%
+- Deployment Status: Success
+
+During the deployment process, Amazon ECS launched new tasks using the updated task definition and gracefully terminated the previous tasks, ensuring zero downtime.
+
+The service successfully transitioned from:
+
+- yourApp-demo:1
+- Message: "Congratulations!"
+
+to:
+
+- yourApp-demo:2
+- Message: "Thank You!"
+
 ### Application Version 2
 
 ![Application V2](screenshots/08-application-v2.png)
