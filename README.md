@@ -140,9 +140,6 @@ to:
 
 ![Application V2](screenshots/08-application-v2.png)
 
-### Service Scaling
-
-![Service Scaling](screenshots/09-service-scaled.png)
 
 ## Skills Demonstrated
 
