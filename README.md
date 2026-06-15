@@ -105,11 +105,6 @@ The ECS scheduler automatically maintained the desired task count and distribute
 ![Task Definition V2](screenshots/06-task-definition-v2.png)
 
 
-### Running Tasks
-
-![Running Tasks](screenshots/03-running-task.png)
-
-
 ### Application Version 1
 
 ![Application V1](screenshots/05-application-v1.png)
