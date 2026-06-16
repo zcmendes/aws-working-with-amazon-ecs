@@ -1,5 +1,11 @@
 # AWS Working with Amazon ECS
 
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+![Amazon ECS](https://img.shields.io/badge/Amazon_ECS-Container_Orchestration-orange)
+![Docker](https://img.shields.io/badge/Docker-Containers-blue)
+![Amazon EC2](https://img.shields.io/badge/Amazon_EC2-Compute-orange)
+![CloudFormation](https://img.shields.io/badge/CloudFormation-IaC-yellow)
+
 Hands-on lab demonstrating container orchestration using Amazon Elastic Container Service (ECS).
 
 ## Architecture
