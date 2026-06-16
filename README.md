@@ -1,5 +1,6 @@
 # AWS Working with Amazon ECS
 
+![Amazon ECS](https://img.shields.io/badge/Amazon_ECS-Container_Orchestration-orange)
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
 ![Amazon ECS](https://img.shields.io/badge/Amazon_ECS-Container_Orchestration-orange)
 ![Docker](https://img.shields.io/badge/Docker-Containers-blue)
