@@ -252,6 +252,12 @@ By completing this lab, I gained practical experience with:
 - Deploying multi-container applications on Amazon ECS
 - Managing ECS service revisions and deployments
 
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
 ## Author
 
 Ze Mendes
