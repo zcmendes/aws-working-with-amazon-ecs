@@ -45,6 +45,29 @@ ECS Tasks
 - Amazon VPC
 - AWS CloudFormation
 
+
+## Infrastructure as Code
+
+The CloudFormation template used in this lab is available in:
+
+```text
+cloudformation/ecs-service-template.json
+```
+
+The template provisions and configures ECS-related resources required for the lab environment.
+
+
+The lab environment was provisioned using AWS CloudFormation.
+
+Main resources:
+
+- Amazon ECS Cluster
+- Auto Scaling Group
+- EC2 Container Instances
+- Network Load Balancer
+- Amazon VPC
+
+
 ## Lab Objectives
 
 - Create ECS Task Definitions
@@ -107,6 +130,19 @@ Initial application response:
 - Congratulations!
 
 This confirmed that the ECS Service, EC2 container instances, shared volume configuration, and Network Load Balancer were functioning correctly.
+
+
+## Repository Structure
+
+```text
+aws-working-with-amazon-ecs/
+├── architecture/
+│   └── ecs-lab-architecture.png
+├── screenshots/
+├── cloudformation/
+└── README.md
+```
+
 
 ## Screenshots
 
