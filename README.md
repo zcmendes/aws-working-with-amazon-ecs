@@ -90,6 +90,18 @@ Configuration highlights:
 
 The ECS scheduler automatically maintained the desired task count and distributed workloads across the available container instances.
 
+
+## Application Validation
+
+The application was successfully deployed and accessed through the Network Load Balancer.
+
+Initial application response:
+
+- Amazon ECS Sample App
+- Congratulations!
+
+This confirmed that the ECS Service, EC2 container instances, shared volume configuration, and Network Load Balancer were functioning correctly.
+
 ## Screenshots
 
 ### Task Definition Revision 1
@@ -136,6 +148,13 @@ to:
 - yourApp-demo:2
 - Message: "Thank You!"
 
+## Service Scaling
+
+The ECS Service capacity was increased from 1 to 2 desired tasks.
+
+Amazon ECS automatically launched an additional task and distributed workloads across the available container instances, demonstrating horizontal scaling capabilities.
+
+
 ### Application Version 2
 
 ![Application V2](screenshots/08-application-v2.png)
@@ -145,10 +164,13 @@ to:
 
 - Container Orchestration
 - Amazon ECS
+- ECS Service Management
 - Docker Concepts
 - Sidecar Container Pattern
 - Rolling Deployments
 - Load Balancing
+- Network Load Balancer Integration
+- Container Networking
 - High Availability
 - Horizontal Scaling
 - Infrastructure as Code (CloudFormation)
@@ -164,6 +186,8 @@ By completing this lab, I gained practical experience with:
 - Scaling ECS services horizontally
 - Understanding container communication through shared volumes
 - Reviewing Infrastructure as Code (IaC) using AWS CloudFormation
+- Deploying multi-container applications on Amazon ECS
+- Managing ECS service revisions and deployments
 
 ## Author
 
