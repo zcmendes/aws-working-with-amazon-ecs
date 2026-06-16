@@ -93,6 +93,17 @@ The application is composed of two containers:
 
 Both containers share a Docker volume, demonstrating the Sidecar Container Pattern.
 
+
+## ECS Task Definition Files
+
+The task definitions used in this lab are stored in the `task-definitions` directory.
+
+- `v1-task-definition.json` – Initial application version displaying the message "Congratulations!"
+- `v2-task-definition.json` – Updated application version displaying the message "Thank You!"
+
+These task definitions demonstrate how Amazon ECS revisions can be used to deploy new application versions through rolling deployments.
+
+
 ## Deployment Workflow
 
 1. Create Task Definition Revision 1
@@ -138,8 +149,18 @@ This confirmed that the ECS Service, EC2 container instances, shared volume conf
 aws-working-with-amazon-ecs/
 ├── architecture/
 │   └── ecs-lab-architecture.png
-├── screenshots/
+├── task-definitions/
+│   ├── v1-task-definition.json
+│   └── v2-task-definition.json
 ├── cloudformation/
+│   └── ecs-service-template.json
+├── screenshots/
+│   ├── 01-task-definition-v1.png
+│   ├── 02-service-created.png
+│   ├── 05-application-v1.png
+│   ├── 06-task-definition-v2.png
+│   ├── 07-deployment-update.png
+│   └── 08-application-v2.png
 └── README.md
 ```
 
