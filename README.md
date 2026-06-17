@@ -263,4 +263,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 Ze Mendes
 
-Cloud | Cybersecurity | DevOps
+Information Security Analyst | Cloud Security | DevOps | AWS
+
+- GitHub: https://github.com/zcmendes
+- LinkedIn: https://www.linkedin.com/in/zcmendes
